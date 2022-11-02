@@ -1,0 +1,13 @@
+@mixin responsive($velicina) {
+  @if $velicina ==tablet {
+    @media screen and (max-width: 980px) {
+      @content;
+    }
+  }
+
+  @if $velicina ==mobilni {
+    @media screen and (max-width: 768px) {
+      @content;
+    }
+  }
+}
